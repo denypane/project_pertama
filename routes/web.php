@@ -29,6 +29,9 @@ use App\Http\Controllers\AlamatController;
 use App\Http\Controllers\AkunController;
 
 
+use App\Http\Controllers\AsikController;
+Route::get('/asik', [AsikController::class, 'index']);
+
 
 Route::get('/', [DashboardController::class, 'index']);
 // Route::get('/', 'App\Http\Controllers\DashboardController@pesanan');

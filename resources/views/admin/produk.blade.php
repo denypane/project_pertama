@@ -49,8 +49,8 @@
         }
 
         .singleImage {
-            width: 250px;
-            height: 315px;
+            width: 220px;
+            height: 300px;
             background-color: white;
             border-radius: 9px;
             display: flex;
@@ -58,10 +58,13 @@
             justify-content: center;
             align-items: center;
             row-gap: 10px;
+            display: grid;
         }
 
-        ul.listProduk {
+        .listProduk {
             list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minman(320px, 1fr) );
         }
 
         .subSingle1 {
@@ -82,7 +85,7 @@
         .subSingle3 {
             display: flex;
             justify-content: space-between;
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 400;
             line-height: 27px;
         }
@@ -130,32 +133,30 @@
     <br>
     <div id="produkContainer">
         <div>
-            <a href="./add_produk" style="color:black; align=center">
-            <button id="addButton">Tambah Produk Baru</button>
+            <a href="./add_produk" >
+            <button  href="./add_produk" id="addButton">Tambah Produk Baru</button></a>
         </div>
         <br>
-        <div>
-        @foreach($produk as $produk_main)
-            <br><br>
-            <div id="produkList">
-                <ul class="listProduk">
-                    <li>
-                        <div class="singleImage">
-                            <img src="./product_images/{{$produk_main->foto_produk}}" alt="image" class="menuLogo toko" width="200px ">
-                            <div>
-                                <p class="subSingle1">{{$produk_main->nama_produk}}</p>
-                                <p class="subSingle2">{{$produk_main->kategori}}</p>
-                                <div class="subSingle3">
-                                    <p>{{$produk_main->stok}}</p>
-                                    <p class="price">{{$produk_main->harga}}</p>
+        <div><br>
+            @foreach($produk as $produk_main)
+                <table>
+                    <tr class="listProduk">
+                        <td>
+                            <div class="singleImage">
+                                <img src="./product_images/{{$produk_main->foto_produk}}" alt="image" class="menuLogo toko" width="200px ">
+                                <div>
+                                    <p class="subSingle1">{{$produk_main->nama_produk}}</p>
+                                    <p class="subSingle2">{{$produk_main->kategori}}</p>
+                                    <div class="subSingle3">
+                                        <p>Stok {{$produk_main->stok}}pcs</p>
+                                        <p class="price">Rp {{$produk_main->harga}}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <!-- Add more list items for products as needed -->
-                </ul>
-            </div>
-        @endforeach
+                        </td>
+                    </tr>
+                </table>
+            @endforeach
         </div>    
     </div>
 
