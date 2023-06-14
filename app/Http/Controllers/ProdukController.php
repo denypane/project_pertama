@@ -85,4 +85,12 @@ class ProdukController extends Controller
 
         return redirect('./produk');
     }
+
+    public function tampilkan_produk($id)
+    {
+        $edit = DB::table('products')->orderBy('id', 'asc')->get();
+        // dd($edit);
+
+        return view('admin.tampilkan_produk', compact('edit'));
+    }
 }

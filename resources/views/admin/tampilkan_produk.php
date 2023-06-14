@@ -120,32 +120,36 @@
 
     <body>
         <div class="headProduct">
-            <h2>Tambah Produk Baru</h2>
-            <p class="tambah">Tambahkan Produk terbaru</p>
+            <h2>Edit Produk</h2>
+            <p class="tambah">Edit Produk</p>
         </div>
         <br><br>
         
         <div id="addProductForm">
-            <form action="./PostAddProduk" method="post" enctype="multipart/form-data">
+            <form action="" method="post" enctype="multipart/form-data">
             @csrf
                 <!-- Product addition form fields -->
                 <div class="inputan">
                     <label>Nama Produk</label>
                     <div>
-                        <input placeholder="Nama Produk" name="nama_produk" type="text" class="form-control" required oninvalid="this.setCustomValidity('Data tidak boleh kosong')" oninput="setCustomValidity('')">
+                        <input placeholder="Nama Produk" name="nama_produk" type="text" class="form-control" 
+                        required oninvalid="this.setCustomValidity('Data tidak boleh kosong')" 
+                        oninput="setCustomValidity('')" value="{{ $edit->nama_produk }}">
                     </div>
                 </div>
                 <div class="inputan inputFlex">
                     <div>
                         <label>Harga</label>
                         <div>
-                            <input placeholder="Harga" name="harga" type="number" class="form-control" required oninvalid="this.setCustomValidity('Data tidak boleh kosong')" oninput="setCustomValidity('')">
+                            <input placeholder="Harga" name="harga" type="number" class="form-control" 
+                            required oninvalid="this.setCustomValidity('Data tidak boleh kosong')" oninput="setCustomValidity('')">
                         </div>
                     </div>
                     <div>
                         <label>Stok</label>
                         <div>
-                            <input placeholder="Stok" name="stok" type="number" class="form-control" required oninvalid="this.setCustomValidity('Data tidak boleh kosong')" oninput="setCustomValidity('')">
+                            <input placeholder="Stok" name="stok" type="number" class="form-control" 
+                            required oninvalid="this.setCustomValidity('Data tidak boleh kosong')" oninput="setCustomValidity('')">
                         </div>
                     </div>
                 </div>
@@ -153,13 +157,15 @@
                     <div>
                         <label>Berat</label>
                         <div>
-                            <input placeholder="Berat" name="berat" type="number" class="form-control" required oninvalid="this.setCustomValidity('Data tidak boleh kosong')" oninput="setCustomValidity('')">
+                            <input placeholder="Berat" name="berat" type="number" class="form-control" 
+                            required oninvalid="this.setCustomValidity('Data tidak boleh kosong')" oninput="setCustomValidity('')">
                         </div>
                     </div>
                     <div>
                         <label>Masa Kadaluarsa</label>
                         <div>
-                            <input placeholder="Masa Kadaluarsa" name="masa_kadaluarsa" type="text" class="form-control" required oninvalid="this.setCustomValidity('Data tidak boleh kosong')" oninput="setCustomValidity('')">
+                            <input placeholder="Masa Kadaluarsa" name="masa_kadaluarsa" type="text" class="form-control" 
+                            required oninvalid="this.setCustomValidity('Data tidak boleh kosong')" oninput="setCustomValidity('')">
                         </div>
                     </div>
                 </div>
@@ -169,9 +175,9 @@
                         <div>
                             <!-- ada yang kurang untuk penyimpanan fotonya -->
                             <select class="form-control" id="select_category" name="id_kategori" required>
-                                <option selected disabled value="">Pilih Kategori</option>
+                                <option selected disabled >Pilih Kategori</option>
                                 @foreach($kategori as $all_category)
-                                    <option value="{{$all_category->id}}" calor='#00000'>{{$all_category->nama}}</option>
+                                    <option value="{{$all_category->id}}">{{$all_category->nama}}</option>
                                 @endforeach
                             </select>
                         </div>

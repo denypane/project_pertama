@@ -71,6 +71,7 @@
             font-size: 18px;
             font-weight: 400;
             line-height: 27px;
+            color: #000000;
             
         }
 
@@ -88,6 +89,7 @@
             font-size: 14px;
             font-weight: 400;
             line-height: 27px;
+            color: #000000;
         }
 
         .price {
@@ -142,7 +144,7 @@
                 <table>
                     <tr class="listProduk">
                         <td>
-                            <div class="singleImage">
+                            <a href="/tampilkan_produk/{{$produk_main->nama_produk}}" class="singleImage">
                                 <img src="./product_images/{{$produk_main->foto_produk}}" alt="image" class="menuLogo toko" width="200px ">
                                 <div>
                                     <p class="subSingle1">{{$produk_main->nama_produk}}</p>
@@ -152,7 +154,7 @@
                                         <p class="price">Rp {{$produk_main->harga}}</p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </td>
                     </tr>
                 </table>

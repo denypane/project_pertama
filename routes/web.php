@@ -34,39 +34,26 @@ Route::get('/asik', [AsikController::class, 'index']);
 
 
 Route::get('/', [DashboardController::class, 'index']);
-// Route::get('/', 'App\Http\Controllers\DashboardController@pesanan');
 Route::get('/dashboard', [DashboardController::class, 'index']);
-// Route::get('/dashboard', 'App\Http\Controllers\DashboardController@pesanan');
 Route::get('/toko', [TokoController::class, 'index']);
-
-
-
 Route::get('/kategori', [KategoriController::class, 'index']);
 Route::get('/add_kategori', [KategoriController::class, 'add_kategori']);
 Route::post('/PostAddKategori', [KategoriController::class, 'PostAddKategori']);
-
 Route::get('/produk', [ProdukController::class, 'index']);
 Route::get('/add_produk', [ProdukController::class, 'add_produk']);
 Route::post('/PostAddProduk', [ProdukController::class, 'PostAddProduk']);
-
-
-
-// Route::get('/produk', 'ProdukController@Produk');
+Route::get('/tampilkan_produk/{id}', [ProdukController::class, 'tampilkan_produk']);
 
 Route::get('/pelanggan', [PelangganController::class, 'index']);
-// Route::get('/pelanggan', 'App\Http\Controllers\PelangganController@pelanggan');
 Route::get('/analisis', [AnalisisController::class, 'index']);
 Route::get('/pengaturan', [PengaturanController::class, 'index']);
 Route::get('/pesanan', [PesananController::class, 'index']);
-// Route::get('/pesanan', 'App\Http\Controllers\PesananController@Pesanan');
 
 // Route::get('/datapesanan', function () {
 //     return view('datapesanan');
 // });
 
 Route::get('/datapesanan', 'App\Http\Controllers\PesananController@DataPesanan');
-// Route::get('/addproduk', 'App\Http\Controllers\AddprodukController@index');
-// Route::post('/PostAddProduk', 'App\Http\Controllers\AddprodukController@PostAddProduk');
 
 // Route::get('/datapesanan', [DataPesananController::class, 'index']);
 Route::get('/penilaian', [PenilaianController::class, 'index']);
@@ -79,5 +66,3 @@ Route::get('/profilToko', [ProfilTokoController::class, 'index']);
 Route::get('/alamat', [AlamatController::class, 'index']);
 Route::get('/akun', [AkunController::class, 'index']);
 // Add more routes for other menu items
-
-//Route::get('/delete/{no_telepon}', [PelangganController::class, 'delete'])->name('delete');

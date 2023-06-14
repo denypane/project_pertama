@@ -286,9 +286,6 @@
                             <a class="sort" style="text-transform: uppercase; font-size:12px">No PESANAN</a>
                         </th>
                         <th>
-                            <a class="sort" style="text-transform: uppercase; font-size:12px">KATEGORI</a>
-                        </th>
-                        <th>
                             <a class="sort"  style="text-transform: uppercase; font-size:12px">NAMA PRODUK</a>
                         </th>
                         <th>
