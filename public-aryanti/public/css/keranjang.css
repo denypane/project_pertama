@@ -42,6 +42,8 @@
 .table-tbody-keranjang img{
     width: 200px;
     height: 106.25px;
+    border-radius: 8px;
+    border-color: transparent;
 }
 
 .table-tbody-keranjang h4{
@@ -73,6 +75,7 @@
     line-height: 24px;
     color: #ffff;
     border-radius: 8px;
+    border-color: transparent;
 }
 
 .total-belanja-wrapper {
@@ -144,7 +147,7 @@
 }
 
 .button-voucher-checkout button {
-    width: 1099px;
+    width: 1000px;
     height: 48px;
     justify-content: center;
     align-items: center;
@@ -154,13 +157,5 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-}
-
-.whatsapp-button {
-    margin-left: 1188px;
-    margin-top: 300px;
-    width: 181px;
-    height: 83px;
-    position: absolute;
 }
 

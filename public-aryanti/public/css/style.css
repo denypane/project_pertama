@@ -30,72 +30,54 @@ section {
 .container {
     max-width: 1500px;
 }
+/* navbar */
+.profil-navbar {
+    width: 63px;
+    height: 63px;
+    margin-left: 20px;
+    margin-top: 18px;
+}
 
-.header-with-logo {
-    position: fixed;
-    height: 100px;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 0px 0px 5px 5px;
+.keranjang-navbar {
+    width: 63px;
+    height: 63px;
+    margin-left: 115px;
+    margin-top: 18px;
+}
+
+.search-navbar {
+    width: 626px;
+    height: 48px;
+    margin-left: 341px;
+    margin-top: 25.72px;
+    padding-left: 5px;
+    padding-top: 2px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;    
+    align-items: center;
+}
+
+.logo-navbar {
+    position: absolute;
+    
+    margin-left: 0px;
+    margin-top: 12px;
+    padding-left: 135px;
 }
 
 .navbar {
-    background-color: var(--main-color);
-    
-}
-
-.navbar .nav-wrapper {
-    background-color: var(--main-color);
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px 10px 0px;
-}
-
-.otorisasi-wrapper {
+    position: absolute;
+    width: 1440px;
+    height: 100px; 
     display: flex;
     flex-direction: row;
-    padding-right: 50px;
-    justify-content: center;
+    justify-content:flex-start;   
+    background: #FFA900;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 0px 5px 5px;           
 }
 
-.nav-icon-wrapper ul{
-    display: flex;
-    flex-direction: row;
-    padding-right: 80px;
-    justify-content: center;
-}
-
-.img-logo {
-    width: 130px;
-    height: 75.44px;
-    padding-left: 50px;
-}
-
-.search-bar {
-    margin: auto;
-    display: flex;
-    box-sizing: border-box;    
-    background: #FFFFFF;
-    border-radius: 8px;
-}
-
-.search-container button {
-    width: 30px;
-}
-
-.header-search-input {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    width: 626px;
-    height: 48px;
-    padding-left: 10px;
-}
 
 .btn-masuk {
     display: flex;
@@ -146,8 +128,17 @@ section {
     display: flex;
     flex-direction: row;
     padding-left: 135px;
-    padding-right: 20px;
+    margin-right: 20px;
     gap: 15px;
+}
+
+.product-container p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;        
 }
 
 .product-container-1 {
@@ -155,7 +146,6 @@ section {
     /* position: absolute; */
     width: 510px;
     height: 202px;
-    left: 135px;
     padding-top: 410px;    
     background: #FFFFFF;
     border: 1px solid #CECECE;
@@ -164,6 +154,7 @@ section {
     display: flex;
     flex-direction: row;
     padding-left: 20px;
+    gap: 60px;
 }
 
 .product-container-2 {
@@ -180,6 +171,7 @@ section {
     display: flex;
     flex-direction: row;
     padding-right: 20px;
+    gap: 50px;
 }
 
 .product-container-2 img {
@@ -334,4 +326,12 @@ section {
     padding-left: 93px;
     padding-top: 49px;
     color: var(--second-color);
+}
+
+.whatsapp-button {
+    margin-left: 1188px;
+    margin-top: 300px;
+    width: 181px;
+    height: 83px;
+    position: absolute;
 }

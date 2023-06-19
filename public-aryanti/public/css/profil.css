@@ -22,51 +22,6 @@ section {
     max-width: 1500px;
 }
 
-/* navbar */
-.profil-navbar {
-    width: 63px;
-    height: 63px;
-    margin-left: 20px;
-    margin-top: 18px;
-}
-
-.keranjang-navbar {
-    width: 63px;
-    height: 63px;
-    margin-left: 115px;
-    margin-top: 18px;
-}
-
-.search-navbar {
-    width: 626px;
-    height: 48px;
-    margin-left: 341px;
-    margin-top: 25.72px;
-    padding-left: 5px;
-    padding-top: 2px;
-    background: #FFFFFF;
-    border-radius: 8px;
-    display: flex;    
-    align-items: center;
-}
-
-.logo-navbar {
-    position: absolute;
-    
-    margin-left: 0px;
-    margin-top: 12px;
-    padding-left: 135px;
-}
-
-.navbar {
-    position: absolute;
-    width: 1440px;
-    height: 100px; 
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;       
-}
-
 /* container */
 .img-profil {
     height: 35px;

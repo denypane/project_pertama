@@ -82,7 +82,7 @@
 }
 
 .ringkasan-pesanan-wrapper button {
-    width: 354px;
+    width: 325px;
     height: 48px;
     margin-bottom: 10px;
     box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
@@ -98,3 +98,77 @@
     height: 83px;
     position: absolute;
 }
+
+/* The Modal for Metode Pembayaran (background) */
+.metode-pembayaran-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .metode-pembayaran-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 376px;
+    height: 240px;
+  }
+  
+  /* The Close Button */
+  .metode-pembayaran-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .metode-pembayaran-close:hover,
+  .metode-pembayaran-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .metode-pembayaran-modal h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;    
+  }
+
+  .selection-metode-pembayaran {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;   
+    background: #FFA900;
+    border-radius: 8px 8px 0px 0px;     
+  }
+
+  .btn-konfirmasi-metode-pembayaran {
+    width: 240px;
+    height: 48px;    
+    background: #FFA900;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;   
+    margin-top: 50px;
+    margin-left: 0px;
+    border-color: transparent;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;    
+  }
