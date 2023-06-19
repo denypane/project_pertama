@@ -1,0 +1,166 @@
+
+.content-kategori-wrapper {
+    max-width: 1170px;
+    padding-left: 134px;
+}
+
+.content-kategori-wrapper h3 {
+    height: 26px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: -0.9px;
+    color: black;
+    padding-top: 165px;
+}
+
+.content-kategori-wrapper nav ul {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    font-family: poppins;
+}
+
+.table-keranjang {
+    margin-left: 242px;
+    margin-top: 39px;
+    width: 961px;
+    height: 393px;
+}
+
+.table-thead-keranjang p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.table-tbody-keranjang img{
+    width: 200px;
+    height: 106.25px;
+}
+
+.table-tbody-keranjang h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #0C0D36;
+}
+
+.table-tbody-keranjang p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #979797;
+}
+
+.table-tbody-keranjang button {
+    width: 121.48px;
+    height: 45px;
+    background-color: red;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffff;
+    border-radius: 8px;
+}
+
+.total-belanja-wrapper {
+    position: absolute;
+    margin-left: 135px;
+    margin-top: 30px;
+    background: #F6F7F8;
+    border-radius: 10px;
+}
+
+.total-belanja-wrapper h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    letter-spacing: -0.9px;
+    color: #000000;
+}
+
+.voucher-wrapper {
+    margin-left: 46px;
+    margin-top: 10px;
+    width: 1086px;
+    height: 111px;
+    display: flex;
+    flex-direction: row;
+}
+
+.voucher-wrapper p{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.9px;
+    color: #000000;
+}
+
+.ul-voucher {
+    height: 61px;
+    width: 551px;
+    border-color: rgba(41, 168, 103, 1);
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(41, 168, 103, 1);
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.ul-voucher button {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.table-detail-voucher {
+    margin-left: 61px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.table-detail-voucher td {
+    padding-right: 100px;
+    align-items: right;
+}
+
+.button-voucher-checkout button {
+    width: 1099px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.whatsapp-button {
+    margin-left: 1188px;
+    margin-top: 300px;
+    width: 181px;
+    height: 83px;
+    position: absolute;
+}
+

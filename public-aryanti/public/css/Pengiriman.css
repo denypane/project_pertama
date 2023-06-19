@@ -1,0 +1,100 @@
+.wrapper-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.pengiriman-wrapper {
+    width: 663px;
+    height: 176px;
+    margin-left: 132px;
+    margin-top: 39px;
+}
+
+.pengiriman-wrapper h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.9px;
+    color: #000000;
+}
+
+.pengiriman-content {
+    width: 663px;
+    height: 150px;
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.ringkasan-pesanan-wrapper {
+    width: 355px;
+    height: 468px;
+    margin-left: 132px;
+    margin-top: 39px;
+}
+
+.ringkasan-pesanan-wrapper h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.table-ringkasan-pesanan img{
+    width: 100px;
+    height: 53.12px;
+}
+
+.table-ringkasan-pesanan td{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    padding-right: 8px;
+}
+
+.table-sub-ringkasan-pesanan{
+    width: 354px;
+    height: 151px;
+}
+
+.table-sub-ringkasan-pesanan td{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    padding-bottom: 5px;
+    padding-right: 60px;
+}
+
+.ringkasan-pesanan-wrapper button {
+    width: 354px;
+    height: 48px;
+    margin-bottom: 10px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-button {
+    margin-left: 1188px;
+    margin-top: 300px;
+    width: 181px;
+    height: 83px;
+    position: absolute;
+}

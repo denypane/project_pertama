@@ -16,10 +16,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <link href="css/pengiriman.css" rel="stylesheet" />
+    <link href="css/keranjang.css" rel="stylesheet" />
     <link href="css/profil.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/keranjang.css">
   </head>
 
   <body>
@@ -53,96 +52,86 @@
         <ul class="breadcrumb">
             <li class="breadcrumb-item" style="padding-right: 8px;"><a href="Homepage.html" style="color: #FFA900;"><b>Dashboard</b></a></li>
             <li style="padding-right: 8px;">></li>
-            <li class="breadcrumb-item" style="padding-right: 8px;"><a href="Homepage.html" style="color: #FFA900;"><b>Keranjang</b></a></li>
-            <li style="padding-right: 8px;">></li>
-            <li class="breadcrumb-item active" aria-current="page"  style="color: #272727;">Pengiriman</li>
+            <li class="breadcrumb-item active" aria-current="page">Keranjang</li>
         </ul>
     </nav>
     </div>
 
-<div class="wrapper-items">
-    <div class="pengiriman-wrapper">
-        <h4 >Alamat Store</h4>
-        <table class="pengiriman-content">
+    <table class="table-keranjang">
+        <thead class="table-thead-keranjang">
             <tr>
-                <td>Nama Store</td>
-                <td>:</td>
-                <td>Cemilanpuas</td>
+                <th><p>Foto</p></th>
+                <th><p>Name & Seller</p></th>
+                <th><p>Price</p></th>
+                <th><p>Menu</p></th>
             </tr>
-            <tr>
-                <td>Alamat</td>
-                <td>:</td>
-                <td>Jalan Seraja Gg. Pertama No.3</td>
-            </tr>
-            <tr>
-                <td>Kecamatan</td>
-                <td>:</td>
-                <td>Medan Sungga</td>
-            </tr>
-            <tr>
-                <td>Kota</td>
-                <td>:</td>
-                <td>Kota Medan</td>
-            </tr>
-        </table>
-    </div>
-    <div class="ringkasan-pesanan-wrapper">
-        <h4>Ringkasan Pesanan</h4>
-        <div>
-        <table class="table-ringkasan-pesanan">
+        </thead>
+        <tbody class="table-tbody-keranjang">
             <tr>
                 <td><img src="images/PisangAroma.png" alt=""></td>
-                <td>Pisang Aroma</td>
-                <td>Rp 8.000</td>
+                <td>
+                    <h4>Pisang Aroma</h4></br>
+                    <p>Pisang</p>
+                </td>
+                <td><h4>Rp 8.000</h4></td>
+                <td>
+                    <button>Hapus</button>
+                </td>
             </tr>
             <tr>
                 <td><img src="images/Bakso-Aci-Geprek.png" alt=""></td>
-                <td>Bakso Aci Geprek</td>
-                <td>Rp 8.000</td>
+                <td>
+                    <h4>Bakso Aci Geprek</h4></br>
+                    <p>Bakso Aci</p>
+                </td>
+                <td><h4>Rp 14.000</h4></td>
+                <td>
+                    <button>Hapus</button>
+                </td>
             </tr>
-        </table>
-        </div>
-        <div>
-        <table class="table-sub-ringkasan-pesanan">
-            <tr>
-                <td>Sub Total</td>
-                <td>Rp 22.000</td>
-            </tr>
-            <tr>
-                <td>Ongkir</td>
-                <td style="color: red;">Rp -</td>
-            </tr>
-            <tr>
-                <td>Diskon Voucher</td>
-                <td style="color: red;">(-)Rp 10.000</td>
-            </tr>
-            <br>
-            <tr>
-                <td>Total</td>
-                <td>Rp -</td>
-            </tr>
-        </table>
-        </div>
-        <a href="#">
-            <button onclick="showAlert()" style="background-color: #FFA900; border-color: transparent;">Metode Pembayaran</button>
-        </a>
+        </tbody>
+    </table>
 
-        <!-- script alert -->
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    
-        <script>
-            function showAlert() {
-                swal("Pengiriman", {
-                    buttons: ["Diambil distore", "Dikirim"],
-                });
-            }
-        </script>
-
-        <a href="#">
-            <button style="background-color: rgba(41, 168, 103, 0.5); border-color: transparent;">Checkout</button>
-        </a>
+    <div class="total-belanja-wrapper">
+        <h4>Total Belanja</h4>
+        <div class="voucher-wrapper">
+            <div style="width: 551px; height: 97px;">
+                <ul>
+                    <p>Voucher</p>
+                </ul>
+                <ul class="ul-voucher">
+                    <label for="voucher"></label>
+                    <select name="voucher" id="voucher" style="width: 408px; height: 61px; background: #ffff;">
+                        <option value="Cemilanpuas">Cemilanpuas</option>
+                    </select>
+                    <a href="Keranjang4.html">
+                        <button type="submit" style="width: 145px; height: 61px; background-color: green; border-color: transparent;">Tambahkan</button>
+                    </a>
+                </ul>
+            </div>
+            <div class="table-detail-voucher">
+                <table>
+                    <tr>
+                        <td><p>Sub Total</p></td>
+                        <td><p>Rp 22.000</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Diskon Voucher</p></td>
+                        <td><p>(-)</p></td>
+                    </tr>
+                    <tr>
+                        <td><p><b>Total</b></p></td>
+                        <td><p><b>Rp 22.000</b></p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="button-voucher-checkout">
+            <button style="background-color: #9A9A9A; color: #000000; border-color: transparent; border-radius: 8px;">Kembali Berbelanja</button>
+            <button style="background-color: #FFA900; color: #fff; border-color: transparent; border-radius: 8px;">Beli Sekarang</button>
+        </div>
     </div>
-</div>
 
     <div class="whatsapp-button">
         <a href="#"><img src="images/logo-chat.png" alt="Chat-WhatsApp"></a>
