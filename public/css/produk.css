@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root{
+    --main-font : font-family: 'poppins';
+    --second-font :font-family: sans-serif;
+}
+
+.content-kategori-wrapper {
+    max-width: 1170px;
+    padding-left: 134px;
+}
+
+/* Content Kategori Basreng */
+.content-kategori-wrapper h3 {
+    height: 26px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: -0.9px;
+    color: black;
+    padding-top: 165px;
+}
+
+.content-kategori-wrapper nav ul {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    font-family: poppins;
+}
+
+.ul-katalog-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.katalog-wrapper ul{
+    padding-top: 0;    
+}
+
+.katalog-container {
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    padding-left: 5px;
+}
+
+.ul-katalog-wrapper .card-produk {
+    padding-right: 30px;
+}
+
+/* 
+.card-produk {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 0px 5px 5px;
+    border: 1px;
+
+} */
+
+
+
+/* produk-sus-coklat-kering */
+.img-produk-wrapper {
+    padding-top: 39px;
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+}
+
+.div-detail-produk h4 {
+    width: 208px;
+    padding-top: 23px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.div-detail-produk p {
+    padding-top: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.head-detail-produk button {
+    width: 221px;
+    height: 48px;
+    gap: 10px;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;  
+}
+
+.head-detail-produk {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 0px;        
+}
+
+.body-detail-produk p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    width: 670px;
+    height: 75px;
+    padding-top: 10px;
+}
+
+.ulasan-detail-produk {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+.ulasan-detail-produk h5 {
+    padding-top: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;    
+}
+
+.ulasan-1 li{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.ulasan-1 img {
+    width: 56px;
+    height: 56px;
+    top: 15px;    
+}
+
+.ulasan-1 h6 {
+    width: 300px;
+    height: 29px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;    
+}
+
+.ulasan-1 p {
+    width: 540px;
+    height: 58px;
+    left: 6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;    
+}
