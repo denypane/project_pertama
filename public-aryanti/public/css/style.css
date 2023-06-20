@@ -30,14 +30,8 @@ section {
 .container {
     max-width: 1500px;
 }
-/* navbar */
-.profil-navbar {
-    width: 63px;
-    height: 63px;
-    margin-left: 20px;
-    margin-top: 18px;
-}
 
+/* navbar */
 .keranjang-navbar {
     width: 63px;
     height: 63px;
@@ -78,7 +72,85 @@ section {
     border-radius: 0px 0px 5px 5px;           
 }
 
+/* Profil */
+.dropdown-profil a  {
+    /* border-radius: 8px; */
+    padding: 8px;
+    border: none;
+}
 
+.dropdown-profil {
+    width: 63px;
+    height: 63px;
+    margin-left: 20px;
+    margin-top: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+.profil-dropdown-content {
+    /* display: none;
+    position: absolute;
+    background-color: #ffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 123px;
+    height: 93px;
+    align-items: center;
+    justify-content: center;
+     */
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    left: -35px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.profil-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;    
+  }
+
+.profil-dropdown-content a:hover {
+    background: #FFA900;
+    color: #FFFFFF;
+    transition: 0.8s;
+    border-radius: 8px;
+}
+
+.profil-dropdown-content li{
+    width: 123px;
+    height: 31px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.dropdown-profil:hover .profil-dropdown-content {
+    display: block;
+}
+
+.dropdown-profil:hover .btn-profil-dropdown {
+    background-color: transparent;
+}
+
+/* Masuk-Daftar */
 .btn-masuk {
     display: flex;
     flex-direction: row;
@@ -177,6 +249,17 @@ section {
 .product-container-2 img {
     width: 190px;
     height: 164.38px;
+}
+
+.discover-now {
+    font-family: 'Taviraj';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+color: #333333;
 }
 
 .kategori-wrapper {

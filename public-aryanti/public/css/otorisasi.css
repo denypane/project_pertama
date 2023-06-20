@@ -8,7 +8,8 @@ body {
 .content-wrapper .container {
     width: 1173px;
     height: 714px;
-    position: static;
+
+    /* position: static; */
     background-color: #fff;
     box-shadow: 0px 72px 80px -48px #223A28;
     border-radius: 24px;
@@ -17,8 +18,10 @@ body {
 }
 
 .content-wrapper {
-    padding-left: 300px;
-    padding-top: 155px;
+    margin-left: 133px;
+    margin-top: 155px;
+    /* padding-left: 300px; */
+    /* padding-top: 155px; */
     max-width: 1440px;
 }
 
@@ -26,8 +29,8 @@ body {
     position: absolute;
     width: 103px;
     height: 32px;
-    padding-left: 231px;
-    padding-top: 70px;
+    margin-left: 231px;
+    margin-top: 60px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -38,8 +41,8 @@ body {
 
 .img-logo {
     position: absolute;
-    padding-left: 246px;
-    padding-top: 19px;
+    margin-left: 246px;
+    margin-top: 19px;
     size: 70px 64px;
     align-items: center;
 }
@@ -51,9 +54,10 @@ body {
 .img-otorisasi {
     position: static;
     /* width:676px;  */
-    height: 666px; 
-    padding-left: 460px;
-    padding-bottom: 60px;
+    height: 600px; 
+    margin-left: 460px;
+    margin-bottom: 60px;
+    margin-top: 50px;
 }
 
 .container-image{
@@ -65,7 +69,8 @@ body {
     /* position: relative; */
     width: 500px;
     height: 500px;
-    padding-left: 70px;
+    margin-left: 70px;
+    margin-bottom: 70px;
     /* padding-bottom: 70px; */
 }
 
@@ -78,8 +83,8 @@ body {
     position: absolute;
     width: 422px;
     height: 434px;
-    padding-left: 64px;
-    padding-top: 160px;
+    margin-left: 64px;
+    margin-top: 120px;
 }
 
 .form-daftar p {
@@ -97,6 +102,7 @@ body {
     font-size: 16px;
     line-height: 100%;
     color: black;
+    margin-bottom: 8px;
 }
 
 .form-daftar input {
