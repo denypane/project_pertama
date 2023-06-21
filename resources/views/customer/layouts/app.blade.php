@@ -33,22 +33,29 @@
                     <a href="/"><img src="images/to_customer/LOGO Cemilanpuas.png" alt="" style="width: 82px; height: 75.44px;"></a>
                 </div>
                 <div class="search-navbar">
-                    <form>
+                    <!-- <form> -->
                         <input type="text" placeholder="Masukkan kata Kunci" style="background-color: transparent; border-color: transparent; width: 570px; height: 44px; color: #000000;">
                         <button type="submit" style="background-color: transparent; border-color: transparent;"><i class="fa fa-search"></i></button>
-                    </form>
+                    <!-- </form> -->
                 </div>
-                <div class="keranjang-navbar">
-                    <a href="keranjang"><img src="images/to_customer/icon-keranjang.png" alt=""></a>
-                </div>
-                <div class="dropdown-profil">
-                    <a class="btn-profil-dropdown"><img src="images/to_customer/Profil.png" alt=""></a>
-                    <div class="profil-dropdown-content">
-                      <a href="Profil.html">My Profil</a>
-                      <a href="Pesanan.html">Pesanan</a>
-                      <a href="Masuk.html">Keluar</a>
-                    </div>
+                @guest
+                  <div class="otorisasi-wrapper">
+                      <a href="masuk.php" class="btn-masuk">Masuk</a>
+                      <a href="daftar.php" class="btn-daftar">Daftar</a>
                   </div>
+                  @else
+                      <div class="keranjang-navbar">
+                          <a href="keranjang"><img src="images/to_customer/icon-keranjang.png" alt=""></a>
+                      </div>
+                      <div class="dropdown-profil">
+                          <a class="btn-profil-dropdown"><img src="images/to_customer/Profil.png" alt=""></a>
+                          <div class="profil-dropdown-content">
+                              <a href="Profil.html">My Profil</a>
+                              <a href="Pesanan.html">Pesanan</a>
+                              <a href="Keluar.html">Keluar</a>
+                          </div>
+                      </div>
+                  @endguest
             </nav>
         </header>
     </div>

@@ -53,23 +53,17 @@
             height: 300px;
             background-color: white;
             border-radius: 9px;
-            display: flex;
-            /* flex-direction: column; */
+            /* display: flex; */
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             row-gap: 10px;
             display: grid;
         }
 
-        .listProduk {
-            list-style: none;
-            /* display: grid; */
-            grid-template-columns: repeat(auto-fit, minman(320px, 1fr) );
-        }
-
-        .listProduk td {
+        .table-produk{
             display: flex;
-            flex-direction: row;
+            flex-direction: row;            
         }
 
         .subSingle1 {
@@ -144,13 +138,13 @@
             <button  href="./add_produk" id="addButton">Tambah Produk Baru</button></a>
         </div>
         <br>
-        <div><br>
+        <div class="table-produk"><br>
             @foreach($produk as $produk_main)
-                <table>
-                    <tr class="listProduk">
+                <table style="margin-right: 20px;">
+                    <tr>
                         <td>
                             <a href="/tampilkan_produk/{{$produk_main->nama_produk}}" class="singleImage">
-                                <img src="./product_images/{{$produk_main->foto_produk}}" alt="image" class="menuLogo toko" width="200px ">
+                                <img src="./product_images/{{$produk_main->foto_produk}}" alt="image" class="menuLogo-toko" width="200px ">
                                 <div>
                                     <p class="subSingle1">{{$produk_main->nama_produk}}</p>
                                     <p class="subSingle2">{{$produk_main->kategori}}</p>
@@ -160,7 +154,7 @@
                                     </div>
                                 </div>
                             </a>
-                        </td>
+                        </td></br>
                     </tr>
                 </table>
             @endforeach

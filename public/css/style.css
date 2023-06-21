@@ -72,6 +72,15 @@ section {
     border-radius: 0px 0px 5px 5px;           
 }
 
+.otorisasi-wrapper {
+    width: 135px;
+    margin-left: 115px;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
 /* Profil */
 .dropdown-profil a  {
     /* border-radius: 8px; */
@@ -253,12 +262,13 @@ section {
 
 .discover-now {
     font-family: 'Taviraj';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 0.03em;
-    text-decoration-line: underline;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 27px;
+letter-spacing: 0.03em;
+text-decoration-line: underline;
+
 color: #333333;
 }
 

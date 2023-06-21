@@ -28,6 +28,7 @@ class DashboardController extends Controller
         }
         
         else{
+            // dd('test');
             return view('index');
         }
     }
