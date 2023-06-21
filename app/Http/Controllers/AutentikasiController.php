@@ -22,12 +22,10 @@ class AutentikasiController extends Controller
             'email' => 'required|email|unique:users',
             'password' => 'required',
             'nama' => 'required',  
-            'nomor_telepon' => 'required',    
-            'g-recaptcha-response' => 'required|captcha',    
+            'nomor_telepon' => 'required',
         ]);
 
         $data_users = $request->only(['email', 'password', 'nama', 'nomor_telepon']);
-        $data_profiles = $request->only(['name', 'no_hp', 'birthday', 'gender']);
         
         $email = $request->email;
         $password = $request->password;
@@ -35,29 +33,17 @@ class AutentikasiController extends Controller
         $nomor_telepon = $request->nomor_telepon;
 
 
-        // Menambahkan data ke dalam tabel " users ".
+        // Menambahkan data ke dalam tabel "users ".
 
         $users  = User::create($data_users);
 
-        $user = User::where('username', $data_users['username'])->pluck('id');
-        $id_user = $user[0];
-
-        $data_profiles += ['user_id' => $id_user];
-
-        
-        // Menambahkan data ke dalam tabel " profiles "
-
-        $profiles  = Profile::create($data_profiles);
-
-
         // Langsung masuk menggunakan akun yang berhasil didaftarkan.
 
-        if(Auth::attempt(['username' => $username, 'password' => $password]) || Auth::attempt(['email' => $email, 'password' => $password])){
+        if(Auth::attempt(['email' => $email, 'password' => $password])){
             $user = Auth::user();
-            return redirect()->back();
+            return redirect('./');
         }
         
-
         // Akan memuat ulang halaman dan memberikan pemberitahuan jika tidak berhasil mendaftarkan akun.
         else{
             return redirect()->back()->with('error', '');
@@ -73,17 +59,17 @@ class AutentikasiController extends Controller
 
         request()->validate(
             [
-                'username_email' => 'required',
+                'email' => 'required',
                 'password' => 'required',
             ]);
 
-        $username_email = $request->username_email;
+        $email = $request->email;
         $password = $request->password;
 
 
         // Memeriksa akun dan akan masuk ke aplikasi dengan akun tersebut.
 
-        if(Auth::attempt(['username' => $username_email, 'password' => $password]) || Auth::attempt(['email' => $username_email, 'password' => $password])){
+        if(Auth::attempt(['email' => $email, 'password' => $password])){
             $id = Auth::user()->id;
             $cek_admin_id = DB::table('users')->where('id', $id)->where('is_admin', 1)->first();
 
@@ -100,7 +86,7 @@ class AutentikasiController extends Controller
             // Akan masuk sebagai pengguna jika kondisi tidak ada kondisi yang terpenuhi.   
 
             else{
-                return redirect()->back();
+                return redirect('./');
             }
         }
 

@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AutentikasiController;
 use App\Http\Controllers\TokoController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\AnalisisController;
 use App\Http\Controllers\PengaturanController;
 use App\Http\Controllers\PesananController;
-
 use App\Http\Controllers\DataPesananController;
 use App\Http\Controllers\PenilaianController;
 use App\Http\Controllers\KategoriController;
@@ -28,12 +28,39 @@ use App\Http\Controllers\ProfilTokoController;
 use App\Http\Controllers\AlamatController;
 use App\Http\Controllers\AkunController;
 
+use App\Http\Controllers\KeranjangController;
+use App\Http\Controllers\CheckoutController;
 
 use App\Http\Controllers\AsikController;
-Route::get('/asik', [AsikController::class, 'index']);
 
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+// Route::get('/', function () {
+//     return view('customer.index');
+// });
 
 Route::get('/', [DashboardController::class, 'index']);
+
+Route::get('/masuk', function () {
+    return view('masuk');
+});
+
+Route::get('/daftar', function () {
+    return view('daftar');
+});
+
+// costumer
+Route::post('/PostRegister', [AutentikasiController::class, 'PostRegister']);
+Route::post('/PostLogin', [AutentikasiController::class, 'PostLogin']);
+Route::get('/keranjang', [KeranjangController::class, 'index']);
+Route::get('/checkout', [CheckoutController::class, 'index']);
+Route::get('/keluar', [AutentikasiController::class, 'Logout']);
+
+Route::get('/asik', [AsikController::class, 'index']);
+
+// Admin
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/toko', [TokoController::class, 'index']);
 Route::get('/kategori', [KategoriController::class, 'index']);
@@ -58,9 +85,6 @@ Route::get('/datapesanan', 'App\Http\Controllers\PesananController@DataPesanan')
 // Route::get('/datapesanan', [DataPesananController::class, 'index']);
 Route::get('/penilaian', [PenilaianController::class, 'index']);
 // Route::get('/kategori', [KategoriController::class, 'index']);
-
-// Route::get('/addkategori', 'App\Http\Controllers\AddKategoriController@index');
-// Route::post('/PostAddKategori', 'App\Http\Controllers\AddKategoriController@PostAddKategori');
 
 Route::get('/profilToko', [ProfilTokoController::class, 'index']);
 Route::get('/alamat', [AlamatController::class, 'index']);

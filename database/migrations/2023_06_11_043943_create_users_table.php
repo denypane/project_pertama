@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('nama');
             $table->string('nomor_telepon');
-            $table->boolean('is_admin');
+            $table->boolean('is_admin')->nullable;
             $table->rememberToken();
             $table->timestamps();
         });

@@ -54,7 +54,7 @@
             background-color: white;
             border-radius: 9px;
             display: flex;
-            flex-direction: column;
+            /* flex-direction: column; */
             justify-content: center;
             align-items: center;
             row-gap: 10px;
@@ -63,8 +63,13 @@
 
         .listProduk {
             list-style: none;
-            display: grid;
+            /* display: grid; */
             grid-template-columns: repeat(auto-fit, minman(320px, 1fr) );
+        }
+
+        .listProduk td {
+            display: flex;
+            flex-direction: row;
         }
 
         .subSingle1 {
