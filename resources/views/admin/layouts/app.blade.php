@@ -154,7 +154,7 @@
             <img src="{{ asset('images/profile.png') }}" alt="image" class="profile">
             <p>Hi, Admin</p>
             <p>|</p>
-            <img src="{{ asset('images/keluar.png') }}" alt="image" class="keluar">
+            <a href="masuk" ><img src="{{ asset('images/keluar.png') }}" alt="image" class="keluar"></a>
         </header>
         <div class="content">
 

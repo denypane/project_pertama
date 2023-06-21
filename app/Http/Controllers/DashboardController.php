@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use DB;
 use Illuminate\Support\Facades\Auth;
 use Session;
+use App\Models\Produk;
 
 
 class DashboardController extends Controller
@@ -23,7 +24,9 @@ class DashboardController extends Controller
             }
             
             else{
-                return view('customer.index');
+                $products = Produk::with('productImage')->orderBy('id', 'asc')->get();
+                // dd($products);
+                return view('customer.index', compact('products'));
             }            
         }
         
@@ -33,17 +36,11 @@ class DashboardController extends Controller
         }
     }
 
-    public function dashboard()
-    {
-        return view('customer.dashboard');
-    }
-
-    public function pesanan()
-    {
-        // $pesanan = DB::table('order')->orderBy('nomor_pesanan', 'asc')->get();
-        // // dd($pesanan);
-        // return view('admin.dashboard', ['pesanan' => $pesanan]);
-
-    }
+    // public function index()
+    // {
+    //     $products = DB::table('products')->get();
+    //     dd($products);
+    //     return view('customer.index', compact('products'));
+    // }
 
 }

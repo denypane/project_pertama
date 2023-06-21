@@ -113,14 +113,16 @@
     <div class="product-terbaru-container">
         <img src="{{ asset('images/to_customer/kerupuk-kancing.png') }}" alt="">
         <div class="detail-product-terbaru-container">
+        @foreach($products as $product)
             <ul>
-            <h4 style="color: black;">Kerupuk Kancing</h4>
-            <p style="color: rgba(255, 113, 88, 1);"><b>Rp 7.000</b></p>
+                <h4 style="color: black;">{{ $product->nama }}</h4>
+                <p style="color: rgba(255, 113, 88, 1);"><b>Rp {{ $product->harga }}</b></p>
             </ul>
-            <a href="#"><img src="{{ asset('images/to_customer/logo-keranjang.png') }}" alt=""></a>
+            <a href="#"><img style="width: 4rem;" src="{{ asset('product_images/' . $product->productImage->nama) }}" alt="{{ $product->id }}"></a>
+        @endforeach
         </div>          
     </div>
-    <div class="product-terbaru-container">
+    <!-- <div class="product-terbaru-container">
         <img src="{{ asset('images/to_customer/kerupuk-kancing.png') }}" alt="">
         <div class="detail-product-terbaru-container">
             <ul>
@@ -149,7 +151,7 @@
             </ul>
             <a href="#"><img src="{{ asset('images/to_customer/logo-keranjang.png') }}" alt=""></a>
         </div>
-    </div>
+    </div> -->
     </ul>
 </div>
 

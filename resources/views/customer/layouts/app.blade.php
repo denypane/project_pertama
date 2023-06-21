@@ -40,8 +40,8 @@
                 </div>
                 @guest
                   <div class="otorisasi-wrapper">
-                      <a href="masuk.php" class="btn-masuk">Masuk</a>
-                      <a href="daftar.php" class="btn-daftar">Daftar</a>
+                      <a href="masuk" class="btn-masuk">Masuk</a>
+                      <a href="daftar" class="btn-daftar">Daftar</a>
                   </div>
                   @else
                       <div class="keranjang-navbar">
@@ -50,9 +50,9 @@
                       <div class="dropdown-profil">
                           <a class="btn-profil-dropdown"><img src="images/to_customer/Profil.png" alt=""></a>
                           <div class="profil-dropdown-content">
-                              <a href="Profil.html">My Profil</a>
-                              <a href="Pesanan.html">Pesanan</a>
-                              <a href="Keluar.html">Keluar</a>
+                              <a href="./profil">My Profil</a>
+                              <a href="Pesanan">Pesanan</a>
+                              <a href="./masuk">Keluar</a>
                           </div>
                       </div>
                   @endguest

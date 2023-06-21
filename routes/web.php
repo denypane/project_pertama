@@ -28,6 +28,7 @@ use App\Http\Controllers\ProfilTokoController;
 use App\Http\Controllers\AlamatController;
 use App\Http\Controllers\AkunController;
 
+use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\CheckoutController;
 
@@ -42,6 +43,7 @@ use App\Http\Controllers\AsikController;
 // });
 
 Route::get('/', [DashboardController::class, 'index']);
+Route::get('/admin/products', [DashboardController::class, 'products'])->name('admin.products');
 
 Route::get('/masuk', function () {
     return view('masuk');
@@ -55,6 +57,7 @@ Route::get('/daftar', function () {
 Route::post('/PostRegister', [AutentikasiController::class, 'PostRegister']);
 Route::post('/PostLogin', [AutentikasiController::class, 'PostLogin']);
 Route::get('/keranjang', [KeranjangController::class, 'index']);
+Route::get('/profil', [ProfilController::class, 'index']);
 Route::get('/checkout', [CheckoutController::class, 'index']);
 Route::get('/keluar', [AutentikasiController::class, 'Logout']);
 
