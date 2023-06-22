@@ -18,6 +18,12 @@
     
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/profil.css" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   </head>
 
   <body>
@@ -35,16 +41,49 @@
                   <button type="submit" style="background-color: transparent; border-color: transparent;"><i class="fa fa-search"></i></button>
                 </form>
               </div>
+              <div class="notifikasi-navbar">
+                <a data-toggle="modal" data-target="#myModal"><img src="images/icon-notifikasi.png" alt=""></a>
+                  <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Pengumuman</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Belum terdapat pengumuman pada halaman anda</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
               <div class="keranjang-navbar">
                 <a href="Keranjang.html"><img src="images/icon-keranjang.png" alt=""></a>
               </div>
-              <div class="dropdown-profil">
+              <div class="profil-navbar">
                 <a class="btn-profil-dropdown"><img src="images/Profil.png" alt=""></a>
                 <div class="profil-dropdown-content">
                   <a href="Profil.html">My Profil</a>
                   <a href="Pesanan.html">Pesanan</a>
                   <a href="Masuk.html">Keluar</a>
                 </div>
+
+                <script>
+                  document.addEventListener('DOMContentLoaded', function(){
+                    var dropdown = document.querySelector('.btn-profil-dropdown');
+              
+                    dropdown.addEventListener('click', function() {
+                      var dropdownContent = this.querySelector('.profil-dropdown-content');
+                      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                    });
+                  });
+                </script>
+
+
+
               </div>
 
 
@@ -155,7 +194,7 @@
 
     <!-- Produk Terbaru -->
     <div class="product-terbaru-section">
-        <h3 style="color: black;"><b>Produk Terlaris</b></h3>
+        <h3 style="color: black;"><b>Produk Terbaru</b></h3>
         <ul class="product-terbaru-wrapper">      
             <a href="ProdukSusCoklatKering.html">
                 <div class="product-terbaru-container">
@@ -217,7 +256,7 @@
     <!-- Produk Terlaris -->
     <div class="product-terlaris-section">
       <a href="#" class="">
-        <h3 style="color: black;"><b>Produk Terbaru</b></h3>
+        <h3 style="color: black;"><b>Produk Terlaris</b></h3>
       </a>
       <ul class="product-terlaris-wrapper">      
         <div class="product-terlaris-container">
