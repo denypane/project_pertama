@@ -3,45 +3,41 @@
 @section('content')
 <!-- Banner -->
 <div class="banner-container">
-    <a href="#" class="banner"><img src="{{ asset('images/to_customer/banner homepage.png') }}" alt="Banner" class="banner-homepage"></a>
-</div>
-<div>
-    
+    <a href="#"><img src="{{ asset('images/to_customer/banner homepage.png') }}" alt="Banner"></a>
 </div>
 <ul class="product-container">
     <div class="product-container-1">
-    <ul>
-        <li>
-        <h4>Pecinta Bakso Aci</h4></br>
-        </li>
-        <li>
-        <p>Rasakan kelezatan bakso aci dengan      
-        </br>beragam varian pilihan!     </p>
-        </li>
-        <li>
-        <a href="#" class="discover-now">Discover Now</a>
-        </li>
-    </ul>
-    <ul>
-        <img src="{{ asset('images/to_customer/bakso aci.png') }}" alt="Produk" class="">
-    </ul>
-    </a>
+        <ul>
+            <li>
+            <h4>Pecinta Bakso Aci</h4>
+            </li>
+            <li>
+            <p>Rasakan kelezatan bakso aci dengan      
+            beragam varian pilihan!     </p>
+            </li>
+            <li>
+            <a href="#" class="discover-now">Discover Now</a>
+            </li>
+        </ul>
+        <ul>
+            <img src="{{ asset('images/to_customer/bakso aci.png') }}" alt="Produk" class="">
+        </ul>
     </div>
     <div class="product-container-2">
-    <ul>
-        <li>
-        <h4>Pecinta Basreng</h4></br>
-        </li>
-        <li>
-        <p>Nikmati cemilan Pedas terbaik dengan 
-        </br>berbagai pilihan yang direkomendasikan 
-        </br>untuk Anda! Yuk, rasakan sensasi  
-        </br>kelezatan yang tak terlupakan.</p>
-        </li>
-        <li>
-        <a href="#" class="discover-now">Discover Now</a>
-        </li>
-    </ul style>
+        <ul>
+            <li>
+            <h4>Pecinta Basreng</h4>
+            </li>
+            <li>
+            <p>Nikmati cemilan Pedas terbaik dengan 
+            berbagai pilihan yang direkomendasikan 
+            untuk Anda! Yuk, rasakan sensasi  
+            kelezatan yang tak terlupakan.</p>
+            </li>
+            <li>
+            <a href="#" class="discover-now">Discover Now</a>
+            </li>
+        </ul>
     <ul>
         <img src="{{ asset('images/to_customer/basreng.png') }}" alt="Produk">
     </ul>
@@ -109,99 +105,50 @@
     <a href="#" class="">
     <h3 style="color: black;"><b>Produk Terbaru</b></h3>
     </a>
-    <ul class="product-terbaru-wrapper">      
-    <div class="product-terbaru-container">
-        <img src="{{ asset('images/to_customer/kerupuk-kancing.png') }}" alt="">
-        <div class="detail-product-terbaru-container">
-        @foreach($products as $product)
-            <ul>
-                <h4 style="color: black;">{{ $product->nama }}</h4>
-                <p style="color: rgba(255, 113, 88, 1);"><b>Rp {{ $product->harga }}</b></p>
-            </ul>
-            <a href="#"><img style="width: 4rem;" src="{{ asset('product_images/' . $product->productImage->nama) }}" alt="{{ $product->id }}"></a>
-        @endforeach
-        </div>          
-    </div>
-    <!-- <div class="product-terbaru-container">
-        <img src="{{ asset('images/to_customer/kerupuk-kancing.png') }}" alt="">
-        <div class="detail-product-terbaru-container">
-            <ul>
-            <h4 style="color: black;">Kerupuk Kancing</h4>
-            <p style="color: rgba(255, 113, 88, 1);"><b>Rp 7.000</b></p>
-            </ul>
-            <a href="#"><img src="{{ asset('images/to_customer/logo-keranjang.png') }}" alt=""></a>
+    <ul class="product-terbaru-wrapper">   
+    @foreach($products as $product)
+      <a href="#" class="">
+        <div class="product-terbaru-container">
+            <img src="{{ asset('product_images/' . $product->productImage->nama) }}" alt="{{ $product->id }}">
+            <div class="detail-product-terbaru-container">
+                <ul>
+                    <h4 style="color: black;">{{ $product->nama }}</h4>
+                    <p style="color: rgba(255, 113, 88, 1);"><b>Rp {{ $product->harga }}</b></p>
+                </ul>
+                <img src="{{ asset('images/to_customer/logo-keranjang.png') }}" alt="">
+            </div>    
         </div>
-    </div>
-    <div class="product-terbaru-container">
-        <img src="{{ asset('images/to_customer/kerupuk-kancing.png') }}" alt="">
-        <div class="detail-product-terbaru-container">
-            <ul>
-            <h4 style="color: black;">Kerupuk Kancing</h4>
-            <p style="color: rgba(255, 113, 88, 1);"><b>Rp 7.000</b></p>
-            </ul>
-            <a href="#"><img src="{{ asset('images/to_customer/logo-keranjang.png') }}" alt=""></a>
-        </div>
-    </div>
-    <div class="product-terbaru-container">
-        <img src="{{ asset('images/to_customer/kerupuk-kancing.png') }}" alt="">
-        <div class="detail-product-terbaru-container">
-            <ul>
-            <h4 style="color: black;">Kerupuk Kancing</h4>
-            <p style="color: rgba(255, 113, 88, 1);"><b>Rp 7.000</b></p>
-            </ul>
-            <a href="#"><img src="{{ asset('images/to_customer/logo-keranjang.png') }}" alt=""></a>
-        </div>
-    </div> -->
+      </a>   
+      @endforeach
     </ul>
 </div>
 
 <!-- Produk Terlaris -->
-<div class="product-terlaris-section">
+<div class="product-terbaru-section">
     <a href="#" class="">
-    <h3 style="color: black;"><b>Produk Terbaru</b></h3>
+    <h3 style="color: black;"><b>Produk Terlaris</b></h3>
     </a>
-    <ul class="product-terlaris-wrapper">      
-    <div class="product-terlaris-container">
-        <img src="{{ asset('images/to_customer/kerupuk-kancing.png') }}" alt="">
-        <div class="detail-product-terlaris-container">
-            <ul>
-            <h4 style="color: black;">Kerupuk Kancing</h4>
-            <p style="color: rgba(255, 113, 88, 1);"><b>Rp 7.000</b></p>
-            </ul>
-            <a href="#"><img src="{{ asset('images/to_customer/logo-keranjang.png') }}" alt=""></a>
-        </div>          
-    </div>
-    <div class="product-terlaris-container">
-        <img src="{{ asset('images/to_customer/kerupuk-kancing.png') }}" alt="">
-        <div class="detail-product-terlaris-container">
-            <ul>
-            <h4 style="color: black;">Kerupuk Kancing</h4>
-            <p style="color: rgba(255, 113, 88, 1);"><b>Rp 7.000</b></p>
-            </ul>
-            <a href="#"><img src="{{ asset('images/to_customer/logo-keranjang.png') }}" alt=""></a>
+    <ul class="product-terbaru-wrapper">   
+    @foreach($products as $product)
+      <a href="#" class="">
+        <div class="product-terbaru-container">
+            <img src="{{ asset('product_images/' . $product->productImage->nama) }}" alt="{{ $product->id }}">
+            <div class="detail-product-terbaru-container">
+                <ul>
+                    <h4 style="color: black;">{{ $product->nama }}</h4>
+                    <p style="color: rgba(255, 113, 88, 1);"><b>Rp {{ $product->harga }}</b></p>
+                </ul>
+                <img src="{{ asset('images/to_customer/logo-keranjang.png') }}" alt="">
+            </div>    
         </div>
-    </div>
-    <div class="product-terlaris-container">
-        <img src="{{ asset('images/to_customer/kerupuk-kancing.png') }}" alt="">
-        <div class="detail-product-terlaris-container">
-            <ul>
-            <h4 style="color: black;">Kerupuk Kancing</h4>
-            <p style="color: rgba(255, 113, 88, 1);"><b>Rp 7.000</b></p>
-            </ul>
-            <a href="#"><img src="{{ asset('images/to_customer/logo-keranjang.png') }}" alt=""></a>
-        </div>
-    </div>
-    <div class="product-terlaris-container">
-        <img src="{{ asset('images/to_customer/kerupuk-kancing.png') }}" alt="">
-        <div class="detail-product-terlaris-container">
-            <ul>
-            <h4 style="color: black;">Kerupuk Kancing</h4>
-            <p style="color: rgba(255, 113, 88, 1);"><b>Rp 7.000</b></p>
-            </ul>
-            <a href="#"><img src="{{ asset('images/to_customer/logo-keranjang.png') }}" alt=""></a>
-        </div>
-    </div>
+      </a>   
+      @endforeach
     </ul>
+</div>
+
+<!-- Whatsapp -->
+<div class="whatsapp-button">
+    <a href="#"><img src="images/to_customer/logo-chat.png" alt="Chat-WhatsApp"></a>
 </div>
 
 <div class="space-content">

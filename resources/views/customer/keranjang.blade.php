@@ -4,7 +4,7 @@
 <!-- Content -->
 <!-- Content -->
 <div class="content-kategori-wrapper">
-    <h3>Kategori Bakso Aci</h3>
+    <h3>Keranjang Belanja</h3>
     <nav aria-label="breadcrumb">
         <ul class="breadcrumb">
             <li class="breadcrumb-item" style="padding-right: 8px;"><a href="#" style="color: #FFA900;"><b>Dashboard</b></a></li>

@@ -27,15 +27,22 @@ section {
     margin-left: 8rem;
 }
 
-.container {
+/* .container {
     max-width: 1500px;
-}
+} */
 
 /* navbar */
+.notifikasi-navbar {
+    height: 63px;
+    width: 63px;
+    margin-left: 99px;
+    margin-top: 19px;
+}
+
 .keranjang-navbar {
     width: 63px;
     height: 63px;
-    margin-left: 115px;
+    margin-left: 20px;
     margin-top: 18px;
 }
 
@@ -193,61 +200,77 @@ section {
 
 .banner-container {
     max-width:100%;
+    margin-left: 135px; 
+    /* flex-shrink: 0; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-left: 135px;       
 }
 
-.banner-homepage {
-    /* position: absolute; */
-    width: 1170px;
-    height: 395px;
-    padding-top: 110px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    padding-left: 135px;
+.banner-container img{
+    width: 1175px;
+    height: 369.72px;
 }
 
 .product-container {
+    width: 1175px;
+    height: 202px;
     display: flex;
     flex-direction: row;
     padding-left: 135px;
     margin-right: 20px;
     gap: 15px;
+    /* width: 580px;
+    height: 202px;
+    flex-shrink: 0;    
+    border-radius: 8px;
+    border: 1px solid var(--cecece, #CECECE);
+    background: #FFF;     */
+}
+
+.product-container h4{
+    color: #000;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.72px;
+    margin-left: 35px;
+    margin-top: 23px;
 }
 
 .product-container p{
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
+    color: #777;
     font-size: 14px;
-    line-height: 24px;
-    color: #777777;        
+    font-family: Nunito;
+    line-height: 16px;
+    letter-spacing: 0.42px;  
+    margin-left: 35px;     
 }
 
 .product-container-1 {
-    box-sizing: border-box;
-    /* position: absolute; */
-    width: 510px;
+    width: 580px;
     height: 202px;
-    padding-top: 410px;    
-    background: #FFFFFF;
-    border: 1px solid #CECECE;
+    flex-shrink: 0;
     border-radius: 8px;
+    border: 1px solid var(--cecece, #CECECE);
+    background: #FFF;    
+    box-sizing: border-box;
     padding: 15px 15px;
     display: flex;
     flex-direction: row;
-    padding-left: 20px;
     gap: 60px;
 }
 
 .product-container-2 {
-    box-sizing: border-box;
-    /* position: absolute; */
-    width: 510px;
+    width: 580px;
     height: 202px;
-    left: 660px;
-    padding-top: 410px;
-    background: #FFFFFF;
-    border: 1px solid #CECECE;
+    flex-shrink: 0;    
     border-radius: 8px;
+    border: 1px solid var(--cecece, #CECECE);
+    background: #FFF;    
+    box-sizing: border-box;
     padding: 15px 15px;
     display: flex;
     flex-direction: row;
@@ -261,15 +284,13 @@ section {
 }
 
 .discover-now {
-    font-family: 'Taviraj';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 27px;
-letter-spacing: 0.03em;
-text-decoration-line: underline;
-
-color: #333333;
+    color: #333;
+    font-size: 16px;
+    font-family: Taviraj;
+    font-weight: 600;
+    letter-spacing: 0.48px;
+    text-decoration-line: underline;
+    margin-left: 35px;
 }
 
 .kategori-wrapper {
@@ -280,18 +301,31 @@ color: #333333;
 
 
 .product-kategori {
-    width: 110px;
-    height: 110px;
+    width: 122.222px;
+    height: 107.601px;
+    flex-shrink: 0;
+    margin-left: 12px;
+    margin-top: 20px;
 }
 
 .card-kategori {
     padding: 20px 15fpx;
+    width: 144px;
+    height: 180px;
+    flex-shrink: 0;    
+    border-radius: 8px;
+    background: var(--f-6-f-7-f-8, #F6F7F8);    
+    gap: 27px;
 }
 
 .kategori-section h4 {
     padding-top: 20px;
     position:static;
     padding-left: 140px;
+    color: #0C0D36;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;    
 }
 
 .kategori-section .kategori-wrapper {
@@ -301,7 +335,18 @@ color: #333333;
 }
 
 .card-kategori p {
+    display: flex;
+    width: 104.776px;
+    height: 29.563px;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-shrink: 0;    
+    color: #0C0D36;
     text-align: center;
+    font-size: 18px;
+    font-family: Poppins; 
+    margin-left: 18px;   
+    margin-top: 10px;
 }
 
 /* Produk Terbaru */
@@ -310,16 +355,42 @@ color: #333333;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 20px;
-    gap: 26px;
+    padding-left: 18px;
+    /* gap: 26px; */
+    margin-right: 38px;
     position: static;
-    width: 1170px;
-    height: 270px;
+    width: 240px;
+    height: 267px;
+    flex-shrink: 0;
+    background: var(--f-6-f-7-f-8, #F6F7F8);  
+    border-radius: 8px 8px 0px 0px;
+}
+
+.product-terbaru-container img{
+    width: 203px;
+    height: 165px;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .product-terbaru-section h3 {
     padding-top: 50px;
     position:static;
     padding-left: 140px;   
+}
+
+.detail-product-terbaru-container img{
+    width: 50px;
+    height: 46.288px;
+    /* margin-left: 20px;     */
+}
+
+.detail-product-terbaru-container h4{
+    color: #000;
+    font-size: 14px;
+    font-family: Poppins;
+    line-height: 150%;
+    letter-spacing: 0.5px;    
+    width: 90px;
 }
 
 .product-terbaru-section .detail-product-terbaru-container {
@@ -421,6 +492,7 @@ color: #333333;
     color: var(--second-color);
 }
 
+/* whatsapp */
 .whatsapp-button {
     margin-left: 1188px;
     margin-top: 300px;

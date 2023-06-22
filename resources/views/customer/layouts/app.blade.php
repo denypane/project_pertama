@@ -22,6 +22,12 @@
     <link href="css/pengiriman.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/keranjang.css" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   </head>
 
   <body>
@@ -44,7 +50,26 @@
                       <a href="daftar" class="btn-daftar">Daftar</a>
                   </div>
                   @else
-                      <div class="keranjang-navbar">
+                  <div class="notifikasi-navbar">
+                    <a data-toggle="modal" data-target="#myModal"><img src="images/to_customer/icon-notifikasi.png" alt=""></a>
+                      <div class="modal fade" id="myModal" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Pengumuman</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Belum terdapat pengumuman pada halaman anda</p>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>    
+                  <div class="keranjang-navbar">
                           <a href="keranjang"><img src="images/to_customer/icon-keranjang.png" alt=""></a>
                       </div>
                       <div class="dropdown-profil">
