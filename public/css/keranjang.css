@@ -1,9 +1,48 @@
-
-.content-kategori-wrapper {
-    max-width: 1170px;
-    padding-left: 134px;
+.content-keranjang-wrapper h3{
+    color: #000;
+    text-align: left;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 25.6px;
+    letter-spacing: -0.9px;
 }
 
+.content-keranjang-wrapper {
+    /* max-width: 1170px; */
+    margin-left: 134px;
+}
+
+/* breadcrum */
+.breadcrumb {
+    height: 26px;
+    margin-top: -35px;
+    width: -0;
+    display: flex;
+    flex-direction: row;
+    /* background-color: #fff; */
+}
+
+.breadcrumb-item a {
+    color: #FFA900;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 25.6px;
+    letter-spacing: -0.9px;
+    padding-right: 8px;    
+}
+
+.breadcrumb-item-active {
+    color: var(--000000, #000);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 25.6px;
+    letter-spacing: -0.9px;    
+}
+
+/* 
 .content-kategori-wrapper h3 {
     color: #000;
     text-align: center;
@@ -13,9 +52,9 @@
     line-height: 25.6px;
     letter-spacing: -0.9px;
     padding-top: 25px;
-}
+} */
 
-.content-kategori-wrapper nav ul {
+.content-keranjang-wrapper nav ul {
     padding-top: 30px;
     display: flex;
     flex-direction: row;
@@ -24,16 +63,16 @@
 
 .table-keranjang {
     margin-left: 242px;
-    margin-top: 39px;
+    margin-top: 60px;
     width: 961px;
     height: 393px;
 }
 
 .table-thead-keranjang p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
+    color: #0C0D36;
     font-size: 16px;
+    font-family: Poppins;
+    font-weight: 600;
     line-height: 24px;
     text-align: left;
 }

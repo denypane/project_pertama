@@ -3,21 +3,20 @@
 @section('content')
 <!-- Content -->
 <!-- Content -->
-<div class="content-kategori-wrapper">
+<div class="content-keranjang-wrapper">
     <h3>Keranjang Belanja</h3>
-    <nav aria-label="breadcrumb">
+    <nav>
         <ul class="breadcrumb">
-            <li class="breadcrumb-item" style="padding-right: 8px;"><a href="#" style="color: #FFA900;"><b>Dashboard</b></a></li>
-            <li style="padding-right: 8px;">></li>
-            <li class="breadcrumb-item active" aria-current="page">Keranjang</li>
+            <li class="breadcrumb-item"><a href="/"><b>Dashboard</b></a></li>
+            <li class="breadcrumb-item-active">Keranjang</li>
         </ul>
     </nav>
     </div>
 
-    <table class="table-keranjang">
+    <table class="table-keranjang"> 
         <thead class="table-thead-keranjang">
             <tr>
-                <th><p>Foto</p></th>
+                <th><p>Foto Produk</p></th>
                 <th><p>Name & Seller</p></th>
                 <th><p>Price</p></th>
                 <th><p>Menu</p></th>
